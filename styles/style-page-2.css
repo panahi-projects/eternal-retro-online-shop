@@ -1,0 +1,58 @@
+/* 2nd page */
+
+/* *** CONTENT *** */
+.card {
+  min-width: 325px;
+  height: 547px;
+}
+.rest-card {
+  width: calc(33% - 0.8rem);
+}
+.image {
+  position: relative;
+  height: 82.5%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image .icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.image-hover {
+  display: none;
+}
+.image:hover .main-image {
+  display: none;
+}
+.image:hover .image-hover {
+  display: block;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: green!important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 255, 0, 0.25)
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+  background-color: #C8FFC8; 
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .rest-card {
+    width: calc(50% - 1rem);
+  }
+}
+@media only screen and (max-width: 847px) {
+  .rest-card {
+    width: calc(100% - 1rem);
+  }
+}

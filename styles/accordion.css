@@ -1,0 +1,6 @@
+.accordion-item {
+    border: none ;
+}
+.accordion-header {
+    border-bottom: 1px solid var(--dark);
+}

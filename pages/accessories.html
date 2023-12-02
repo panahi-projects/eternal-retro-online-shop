@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Fashion, Boutique, Cloths" />
+    <meta name="description" content="Online stylish boutique shop" />
+    <meta name="author" content="Saeed Panahi" />
+    <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+
+    <title>Boutique Store - Accessories</title>
+
+    <!-- styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+      integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/style-page-1.css" />
+    <link rel="stylesheet" href="../styles/style-page-2.css" />
+  </head>
+  <body>
+    <div id="Wrapper">
+      <!-- Header -->
+      <div class="header">
+        <header>
+          <!-- Start Top-bar -->
+          <div class="top-bar bg-primary text-footer-body">
+            <span class="lang">EN/ITA</span>
+            <span>
+              Buy a second-hand item and get 20% off on your first purchase
+            </span>
+            <span></span>
+          </div>
+          <!-- End Top-bar -->
+
+          <!-- Start Hero -->
+          <div class="hero">
+            <div class="header-bar">
+              <div class="logo"><a href="../index.html"><h1>Eternal Retro</h1></a></div>
+
+              <!-- Start Navigation -->
+              <div class="navigation">
+                <nav>
+                  <ul>
+                    <li><a href="./products-list.html">Clothes</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./blog.html">Sustainability</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- End Navigation -->
+
+              <!-- Start Menu -->
+              <div class="menu">
+                <span class="icon ms-0 m-2">
+                  <img src="../assets/icons/search.png" alt="search" />
+                </span>
+                <span class="icon m-2">
+                  <img src="../assets/icons/user.png" alt="user" />
+                </span>
+                <span class="icon m-2">
+                  <img src="../assets/icons/love.png" alt="love" />
+                </span>
+                <span class="icon m-2">
+                  <img src="../assets/icons/bag.png" alt="bag" />
+                </span>
+              </div>
+              <!-- End Menu -->
+            </div>
+
+            <!-- Start Banner-image -->
+            <div class="banner">
+              <div class="width-1-3 image blog-xx-large-image">
+                <img
+                  src="../assets/images/accessories-banner-1.png"
+                  class="blog-xx-large-image"
+                  alt="banner-1"
+                />
+              </div>
+              <div class="width-1-3 image blog-xx-large-image">
+                <img
+                  src="../assets/images/accessories-banner-2.png"
+                  class="blog-xx-large-image"
+                  alt="banner-2"
+                />
+              </div>
+              <div class="width-1-3 image blog-xx-large-image">
+                <img
+                  src="../assets/images/accessories-banner-3.png"
+                  style="height: 600px"
+                  alt="banner-3"
+                />
+              </div>
+            </div>
+            <!-- End Banner-image -->
+
+            <div class="hero-title">
+              <h1>Accessories</h1>
+            </div>
+          </div>
+          <!-- End Hero -->
+        </header>
+      </div>
+      <!-- End Header -->
+
+      <!-- Content -->
+      <div class="main pt-3">
+        <main>
+          <div class="container-xl">
+            <div class="row">
+              <div class="col-md-12">
+                <div
+                  class="breadcrumbs d-flex flex-wrap justify-content-between"
+                >
+                  <nav
+                    style="
+                      --bs-breadcrumb-divider: url(
+                        &#34;data:image/svg + xml,
+                        %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+                      );
+                    "
+                    aria-label="breadcrumb"
+                  >
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item active">
+                        <a href="#">New In</a>
+                      </li>
+                    </ol>
+                  </nav>
+                  <div class="custom-form-group">
+                    <select class="custom-form-select">
+                      <option selected disabled>Sort By</option>
+                      <option value="default">Default</option>
+                      <option value="price_highest_to_lowest">
+                        Price Highest to Lowest
+                      </option>
+                      <option value="price_lowest_to_highest">
+                        Price Lowest to Highest
+                      </option>
+                      <option value="best_sellers">Best Sellers</option>
+                      <option value="1970s">1970s</option>
+                      <option value="1980s">1980s</option>
+                      <option value="1990s">1990s</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <aside>
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <div class="custom-form-group">
+                        <select class="custom-form-select">
+                          <option selected disabled>Category</option>
+                          <option value="1970s">1970s</option>
+                          <option value="1980s">1980s</option>
+                          <option value="1990s">1990s</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="custom-form-group">
+                        <select class="custom-form-select">
+                          <option selected disabled>Size</option>
+                          <option value="X-Small">X-Small</option>
+                          <option value="Small">Small</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Large">Large</option>
+                          <option value="X-Large">X-Large</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="custom-form-group">
+                        <select class="custom-form-select">
+                          <option selected disabled>Color</option>
+                          <option value="White">White</option>
+                          <option value="Black">Black</option>
+                          <option value="Gray">Gray</option>
+                          <option value="Blue">Blue</option>
+                          <option value="Green">Green</option>
+                          <option value="Red">Red</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="custom-form-group">
+                        <select class="custom-form-select">
+                          <option selected disabled>Price</option>
+                          <option value="Under-50">Under €50</option>
+                          <option value="100">€100</option>
+                          <option value="200">€200</option>
+                          <option value="300">€300</option>
+                          <option value="More-300">More than €300</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4 mt-2 text-center">
+                      <button class="btn btn-primary">Clear Filters</button>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+              <div class="col-md-10">
+                <div class="d-flex flex-wrap justify-content-start">
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="main-image"
+                        alt="image 1"
+                      />
+                      <img
+                        src="../assets/images/img-2.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Sole bianco Shirt</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #fff"
+                          ></span>
+                          <span
+                            class="color-box"
+                            style="background-color: #e9d2d5"
+                          ></span>
+                          <span
+                            class="color-box"
+                            style="background-color: #599b9e"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€90</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1">XS</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >S</span
+                          >
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >L</span
+                          >
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-2.jfif"
+                        class="main-image"
+                        alt="image 2"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Sole brillante Dress</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #599b9e"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€120</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1">XS</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >S</span
+                          >
+                          <span class="text-footer-body p-1 disabled-text"
+                            >M</span
+                          >
+                          <span class="text-footer-body p-1">L</span>
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-3.jfif"
+                        class="main-image"
+                        alt="image 3"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Occhi di serpente Earing</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #e4df72"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€70</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1">XS</span>
+                          <span class="text-footer-body p-1">S</span>
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >L</span
+                          >
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-4.jfif"
+                        class="main-image"
+                        alt="image 4"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Bianca circolata Dress</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #e9d2d5"
+                          ></span>
+                          <span
+                            class="color-box"
+                            style="background-color: #fff"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€105</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1">XS</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >S</span
+                          >
+                          <span class="text-footer-body p-1 disabled-text"
+                            >M</span
+                          >
+                          <span class="text-footer-body p-1 disabled-text"
+                            >L</span
+                          >
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-5.jfif"
+                        class="main-image"
+                        alt="image 5"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Sole bianco Shirt</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #e9d2d5"
+                          ></span>
+                          <span
+                            class="color-box"
+                            style="background-color: #fff"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€100</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1 disabled-text"
+                            >XS</span
+                          >
+                          <span class="text-footer-body p-1">S</span>
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1">L</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >XL</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card border-0 flex-fill m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-6.jfif"
+                        class="main-image"
+                        alt="image 6"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Blue d'estate Shorts</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #8ecad8"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€90</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1">XS</span>
+                          <span class="text-footer-body p-1">S</span>
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >L</span
+                          >
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rest-card border-0 m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-8.jfif"
+                        class="main-image"
+                        alt="image 6"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Punti bianchi Headscarf</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #548651"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€75</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1 disabled-text"
+                            >XS</span
+                          >
+                          <span class="text-footer-body p-1">S</span>
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >L</span
+                          >
+                          <span class="text-footer-body p-1">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card rest-card border-0 m-2 rounded overflow-hidden"
+                  >
+                    <div class="image">
+                      <span class="icon">
+                        <img src="../assets/icons/love.png" alt="love" />
+                      </span>
+                      <img
+                        src="../assets/images/img-7.jfif"
+                        class="main-image"
+                        alt="image 6"
+                      />
+                      <img
+                        src="../assets/images/img-1.jfif"
+                        class="image-hover"
+                        alt="image 1"
+                      />
+                    </div>
+                    <div class="card-body bg-light-gray">
+                      <div class="d-flex justify-content-between">
+                        <p>Zerrara Bag</p>
+                        <div class="colors">
+                          <span
+                            class="color-box"
+                            style="background-color: #d4a567"
+                          ></span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <span class="text-footer-title">€50</span>
+                        <div class="d-flex justify-content-around">
+                          <span class="text-footer-body p-1 disabled-text"
+                            >XS</span
+                          >
+                          <span class="text-footer-body p-1">S</span>
+                          <span class="text-footer-body p-1">M</span>
+                          <span class="text-footer-body p-1">L</span>
+                          <span class="text-footer-body p-1 disabled-text"
+                            >XL</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 text-center mt-4 mb-4">
+                <div
+                  style="
+                    width: 30%;
+                    height: 20px;
+                    border-top: 2px solid var(--dark);
+                    margin: auto;
+                  "
+                ></div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-evenly">
+                      <div class="text-center">
+                        <div>
+                          <span class="icon" style="width: 35px">
+                            <img
+                              src="../assets/icons/support-1.png"
+                              alt="support"
+                            />
+                          </span>
+                        </div>
+                        <div class="text-footer-body mt-2">Free returns</div>
+                      </div>
+                      <div class="text-center">
+                        <div>
+                          <span class="icon" style="width: 35px">
+                            <img
+                              src="../assets/icons/support-2.png"
+                              alt="support"
+                            />
+                          </span>
+                        </div>
+                        <div class="text-footer-body mt-2">
+                          Free delivery for over 120€
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div>
+                          <span class="icon" style="width: 35px">
+                            <img
+                              src="../assets/icons/support-3.png"
+                              alt="support"
+                            />
+                          </span>
+                        </div>
+                        <div class="text-footer-body mt-2">Secure payment</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- End Content -->
+
+      <!-- Footer -->
+      <div class="footer mt-4 border-top border-dark p-4">
+        <footer class="container-xl pb-4">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-3">
+                  <p class="text-footer-title">Costumer Service</p>
+                  <ul>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Size Guide</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Delivery and Returns</a>
+                    </li>
+                    <li class="text-footer-body mb-2"><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p class="text-footer-title">My Account</p>
+                  <ul>
+                    <li class="text-footer-body mb-2"><a href="#">Login</a></li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Register</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">My Shopping Cart</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Whish list</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p class="text-footer-title">About Us</p>
+                  <ul>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Who We Are</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Environment & Sustainability</a>
+                    </li>
+                    <li class="text-footer-body mb-2">
+                      <a href="#">Lookbook</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <p class="text-footer-title">Follow us on</p>
+                  <span class="icon me-2">
+                    <a href="#">
+                      <img
+                        src="../assets/icons/instagram.png"
+                        alt="instagram"
+                      />
+                    </a>
+                  </span>
+                  <span class="icon me-2">
+                    <a href="#">
+                      <img
+                        src="../assets/icons/pinterest.png"
+                        alt="pinterest"
+                      />
+                    </a>
+                  </span>
+                  <span class="icon me-2">
+                    <a href="#">
+                      <img src="../assets/icons/facebook.png" alt="facebook" />
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="text-color-secondary mb-3">
+                    Sign Up And Save 20% OFF
+                  </h3>
+                  <p class="text-footer-body">
+                    Become our member and get 20% off on your first purchase
+                  </p>
+
+                  <div class="custom-form-group mt-3">
+                    <input
+                      type="text"
+                      placeholder="Enter your email address"
+                      class="custom-input"
+                    />
+                    <button class="btn btn-tertiary btn-sm">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- End Footer -->
+    </div>
+
+    <!-- scripts -->
+    <script src="../scripts/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

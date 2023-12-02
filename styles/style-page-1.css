@@ -1,0 +1,70 @@
+/* Main page */
+
+/* *** CONTENT *** */
+.grid-box {
+  display: grid;
+  /* grid-template-columns: 70% 30%; */
+  align-items: start;
+}
+
+/* grid right */
+.grid-right {
+  grid-template-columns: 30% 70%;
+}
+.grid-right .big-image {
+  grid-column: 2;
+}
+.grid-right .small-images {
+  grid-column: 1;
+}
+.grid-right .small-images {
+  grid-template-rows: repeat(1, 100%);
+}
+
+/* grid left */
+.grid-left {
+  grid-template-columns: 70% 30%;
+}
+.grid-left .big-image {
+  grid-column: 1;
+}
+.grid-left .small-images {
+  grid-column: 2;
+}
+.grid-left .small-images {
+  grid-template-rows: repeat(
+    3,
+    calc(33% - 4px)
+  ); /* If there is 3 images inside the container */
+}
+
+/* grid children */
+.big-image {
+  align-self: stretch;
+  margin: 10px;
+  height: var(--normal-box-height);
+}
+.small-images {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 10px;
+  align-self: stretch;
+  height: var(--normal-box-height);
+}
+.big-image img,
+.small-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -------------------------------------- */
+/* Slider images */
+.image {
+  height: 547px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
