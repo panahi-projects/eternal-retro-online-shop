@@ -43,7 +43,7 @@ const CreateInputText = () => {
     });
     const check = CreateElement({
       tag: "span",
-      className: 'input-check'
+      className: "input-check",
     });
 
     function addClass() {
@@ -86,8 +86,8 @@ const CreateInputText = () => {
     };
 
     // adds check sign if data-status set to "success"
-    if(textbox.dataset.status === 'success'){
-      newEl.childNodes.push(check)
+    if (textbox.dataset.status === "success") {
+      newEl.childNodes.push(check);
     }
 
     // Create the box of elements
@@ -95,7 +95,60 @@ const CreateInputText = () => {
     textbox.replaceWith(inputText);
   }
 };
-
 (function () {
   CreateInputText();
+
+  let isMenuOpen = false;
+  let isItemsDisplayed = false;
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navigation = document.querySelector(".navigation");
+
+  const threeDots = document.querySelector(".three-dots-menu");
+  const menu = document.querySelector(".menu");
+
+  hamburgerMenu.addEventListener("click", (event) => {
+    if (hamburgerMenu.classList.contains("menu-active")) {
+      isMenuOpen = !isMenuOpen;
+    } else {
+      isMenuOpen = !isMenuOpen;
+    }
+
+    if (isMenuOpen) {
+      hamburgerMenu.classList.add("menu-active");
+      navigation.classList.add("navigation-active");
+    } else {
+      hamburgerMenu.classList.remove("menu-active");
+      navigation.classList.remove("navigation-active");
+    }
+  });
+
+  threeDots.addEventListener("click", (event) => {
+    if (menu.classList.contains("menu-toggle")) {
+      isItemsDisplayed = !isItemsDisplayed;
+    } else {
+      isItemsDisplayed = !isItemsDisplayed;
+    }
+
+    if (isItemsDisplayed) {
+      menu.classList.add("menu-toggle");
+    } else {
+      menu.classList.remove("menu-toggle");
+    }
+  });
+
+  window.addEventListener("click", function (e) {
+    if (
+      !document.querySelector(".clickbox").contains(e.target) &&
+      (hamburgerMenu.classList.contains("menu-active") ||
+        menu.classList.contains("menu-toggle"))
+    ) {
+      // Clicked in box
+      hamburgerMenu.classList.remove("menu-active");
+      navigation.classList.remove("navigation-active");
+      menu.classList.remove("menu-toggle")
+
+      isMenuOpen = !isMenuOpen;
+      isItemsDisplayed = !isItemsDisplayed;
+    }
+  });
 })();
