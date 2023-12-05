@@ -7,7 +7,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        ...getEntryPoints(__dirname, 'pages')
+        ...getEntryPoints(__dirname, 'pages'),
+        ...getEntryPoints(__dirname, 'scripts'),
       },
     },
   },
